@@ -7,12 +7,16 @@
         "tv" : [
           "ares-setup-device [OPTION...] -a, --add DEVICE_NAME -i, --info <DEVICE_INFO>",
           "ares-setup-device [OPTION...] -m, --modify DEVICE_NAME -i, --info <DEVICE_INFO>",
-          "ares-setup-device [OPTION...] -r, --remove DEVICE_NAME"
+          "ares-setup-device [OPTION...] -r, --remove DEVICE_NAME",
+          "ares-setup-device [OPTION...] -s, --search @TAB@ Search webOS Devices",
+          "ares-setup-device [OPTION...] -t, --timeout <SECONDS> @TAB@ Specify search timeout [default:5]"
           ],
         "signage" : [
           "ares-setup-device [OPTION...] -a, --add DEVICE_NAME -i, --info <DEVICE_INFO>",
           "ares-setup-device [OPTION...] -m, --modify DEVICE_NAME -i, --info <DEVICE_INFO>",
-          "ares-setup-device [OPTION...] -r, --remove DEVICE_NAME"
+          "ares-setup-device [OPTION...] -r, --remove DEVICE_NAME",
+          "ares-setup-device [OPTION...] -s, --search @TAB@ Search webOS Devices",
+          "ares-setup-device [OPTION...] -t, --timeout <SECONDS> @TAB@ Specify search timeout [default:5]"
           ]
     },
     "description" : [

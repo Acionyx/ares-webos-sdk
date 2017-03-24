@@ -44,7 +44,7 @@
             "-c, --close @TAB@ Stop running gdbserver"
         ],
         "port" : [
-            "-p, --port @TAB@ Specify gdbserver port to use [default:9930]"
+            "-p, --port <PORT> @TAB@ Specify gdbserver port to use [default:9930]"
         ],
         "help" : "-h, --help @TAB@ Display this help",
         "version" : "-V, --version @TAB@ Display version info",

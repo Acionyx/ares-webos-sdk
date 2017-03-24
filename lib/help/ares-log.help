@@ -51,7 +51,7 @@
         ],
         "tv": [
             "# Display error and critical logs tagged with UserTag1 and hide others",
-            "ares-log -d DEVICE UserTag1:E, *:S",
+            "ares-log -d DEVICE UserTag1:E *:S",
             ""
         ]
     },

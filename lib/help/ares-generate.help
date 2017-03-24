@@ -10,7 +10,7 @@
             "ivi" : "ares-generate - Generate files for a ivi app"
         }
     ],
-    "synopsis" : { 
+    "synopsis" : {
         "default" : [
             "ares-generate [OPTION...] <APP_DIR>"
         ]
@@ -24,17 +24,25 @@
         "Properties can be specified as key-value pairs of the form \"key=value\"",
         "or as JSON objects of the form \"{'key':'value', 'key2':'value2', ...}\".",
         "Surrounding quotes are required in both cases."
-    ], 
+    ],
     "examples" : [
         {
             "tv" : [
                 "# Create an app in ~/projects/app and set the id, version, title",
-                "ares-generate -t bootplate-web -p \"{'id':'com.domain.app', 'version':'1.0.0', 'title':'First App'}\" ~/projects/app",
+                "ares-generate -t moonstone-2017 -p \"{'id':'com.domain.app', 'version':'1.0.0', 'title':'First App'}\" ~/projects/app",
                 " Or",
-                "ares-generate -t bootplate-web -p \"id=com.domain.app\" -p \"version=1.0.0\" -p \"title=First App\" ~/projects/app",
+                "ares-generate -t moonstone-2017 -p \"id=com.domain.app\" -p \"version=1.0.0\" -p \"title=First App\" ~/projects/app",
                 "",
                 "# Create an webOS service named 'com.domain.app.service'",
-                "ares-generate -t webos-service -s \"com.domain.app.service\" ~/projects/service",
+                "ares-generate -t js_service -s \"com.domain.app.service\" ~/projects/service",
+                "",
+                "# git checkout as described in .enyoconfig's target property",
+                "ares-generate -t moonstone-2017 ~/projects/app",
+                " The enyo and related libraries are pulled from git-repo.",
+                " If you want to change the branch/tag of the libraries",
+                " change the 'targets' property of .enyoconfig file in ~/projects/app",
+                " Then run this command which pull libaries again as described in the .enyoconfig.",
+                "ares-generate --init ~/projects/app",
                 ""
             ],
             "watch" : [
@@ -62,14 +70,13 @@
     "options" : {
         "cmdOpt":"option",
         "default" : ["template", "list", "property", "servicename", "overwrite", "level", "help", "version", "verbose"],
-        "tv" : [],
+        "tv" : ["init"],
         "watch" : [],
         "template" : [
             "-t, --template <TEMPLATE> @TAB@ Use the tepmlate named TEMPLATE"
-        ], 
-        "library-version" : [
-            "-lv, --library-version <VERSION> @TAB@ Set ENYO VERSION of the enyo template",
-            "@TAB@ VERSION can be listed via ares-generate --list, -l"
+        ],
+        "init" : [
+            "-i, --init @TAB@ Checkout git-repo as described in .enyoconfig of the directory."
         ],
         "list" : [
             "-l, --list @TAB@ List the available templates"

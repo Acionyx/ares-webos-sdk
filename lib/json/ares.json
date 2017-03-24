@@ -1,39 +1,39 @@
 {
     "ares-build" : {
-        "profile" : ["tv"], 
-        "description" : "Build Native App or Service template",
+        "profile" : ["tv"],
+        "description" : "Build native app or service templates",
         "knownOpts" : "build",
         "shortHands" : {"b":  ["--build"]}
     },
     "ares-config" : {
         "profile" : ["none"],
-        "description" : "Specify a device profile (webOS device type)",
+        "description" : "Configure webOS CLI",
         "knownOpts" : "config",
         "shortHands" : {"c":  ["--config"]}
     },
     "ares-gdbserver" : {
         "profile" : ["tv", "watch"],
-        "description" : "Command line interface for gdbserver",
+        "description" : "Run gdbserver on the device",
         "knownOpts" : "gdbserver",
         "shortHands" : {"g":  ["--gdbserver"]}
     },
     "ares-generate" : {
-        "description" : "Create webOS app project from templates",
+        "description" : "Generate files for a webOS app or service",
         "knownOpts" : "generate",
         "shortHands" : {"G":  ["--generate"]}
     },
     "ares-inspect" : {
-        "description" : "Provides the debugging Web/Node Inspector",
+        "description" : "Provide URL to use Web Inspector or Node Inspector",
         "knownOpts" : "inspect",
         "shortHands" : {"I":  ["--inspect"]}
     },
     "ares-install" : {
-        "description" : "Install/Remove applications",
+        "description" : "Install or Remove app from a device",
         "knownOpts" : "install",
         "shortHands" : {"i":  ["--install"]}
     },
     "ares-launch" : {
-        "description" : "Runs and terminates applications",
+        "description" : "Launch or close apps",
         "knownOpts" : "launch",
         "shortHands" : {"L":  ["--launch"]}
     },
@@ -55,12 +55,12 @@
         "shortHands" : {"p":  ["--package"]}
     },
     "ares-pull" : {
-        "description" : "Pull file from a device to host machine",
+        "description" : "Pull file from a device",
         "knownOpts" : "pull",
         "shortHands" : {"pf":  ["--pull"]}
     },
     "ares-push" : {
-        "description" : "Push the file from host machine to target device",
+        "description" : "Push the file to target device",
         "knownOpts" : "push",
         "shortHands" : {"pt":  ["--push"]}
     },
@@ -77,7 +77,7 @@
         "shortHands" : {"R":  ["--root"]}
     },
     "ares-server" : {
-        "description" : "Runs a local web server based on path",
+        "description" : "Run a local web server based on path",
         "knownOpts" : "server",
         "shortHands" : {"s":  ["--server"]}
     },
@@ -89,13 +89,13 @@
     },
     "ares-setup-device" : {
         "profile" : ["tv", "signage"],
-        "description" : "Manages target device, such as emulator and webOS Device",
+        "description" : "Add or modify the informations of the devices to use",
         "knownOpts" : "setup-device",
         "shortHands" : {"se":  ["--setup-device"]}
     },
     "ares-shell" : {
         "profile" : ["watch"],
-        "description" : "Starts a remote shell or run a command",
+        "description" : "Open a device terminal or run a command",
         "knownOpts" : "shell",
         "shortHands" : {"sh":  ["--shell"]}
      }

@@ -5,16 +5,13 @@
 			"id": "genZip",
 			"sources": [
 				{
-					"id": "basic_web",
-					"profile": [
-						"tv"
-					],
+					"id": "bootplate-web",
 					"type": "template",
+					"version": "0.0.1",
+					"isDefault": false,
 					"description": "Basic web template for webOS - none enyo library.",
-					"deps": [
-						"webappinfo",
-						"webicon"
-					],
+					"class":"basic",
+					"deps": ["webappinfo", "webicon"],
 					"files": [
 						{
 							"url": "@PLUGINDIR@/templates/bootplate-web"
@@ -22,160 +19,70 @@
 					]
 				},
 				{
-					"id": "moonstone-2.3",
-					"profile": [
-						"tv"
-					],
-					"type": "null",
-					"xtype": "webapp",
-					"xlibrary": "moonstone",
-					"description": "Enyo 2.3 moonstone template for webOS TV 1.x",
-					"deps": [
-						"moonstonelib"
-					]
-				},
-				{
-					"id": "moonstone-2.5",
-					"profile": [
-						"tv"
-					],
-					"type": "null",
-					"xtype": "webapp",
-					"xlibrary": "moonstone",
-					"description": "Enyo 2.5 moonstone template for webOS TV 2.x",
-					"deps": [
-						"moonstonelib"
-					]
-				},
-				{
-					"id": "moonstone-2.6",
-					"profile": [
-						"tv"
-					],
+					"id": "bootplate-moonstone",
 					"type": "template",
-					"description": "Enyo 2.6 moonstone template for webOS TV 3.x",
+					"version": "2.5",
 					"isDefault": true,
-					"deps": [
-						"moonstonelib"
-					],
-					"class": "moonstone"
+					"description": "Enyo moonstone app",
+					"class": "moonstone",
+					"deps": ["enyoappinfo", "enyoicon", "moonstone"],
+					"files": [{
+						"url": "@PLUGINDIR@/templates/app-moonstone"
+					}]
 				},
 				{
-					"id": "moonstone_wz-2.6",
-					"profile": [
-						"tv"
-					],
-					"type": "template",
-					"description": "Enyo 2.6 moonstone Wizard",
-					"deps": [
-						"moonstonelib"
-					],
-					"files": [
-						{
-							"url": "@PLUGINDIR@/templates/tv/template/moonstone-2.6/Wizard/src",
-							"at": "src"
-						}
-					],
-					"class": "moonstone"
+					"id": "sdl_basic",
+					"type": "native",
+					"version": "0.0.1",
+					"isDefault": false,
+					"description": "SDL Basic UI",
+					"class":"native_app",
+					"deps": ["nativeappinfo", "nativeicon"],
+					"files": [{
+						"url": "@PLUGINDIR@/templates/native/2DGames"
+					}]
 				},
 				{
-					"id": "moonstone_apv-2.6",
-					"profile": [
-						"tv"
-					],
-					"type": "template",
-					"description": "Enyo 2.6 moonstone ActivityPanels With Video",
-					"deps": [
-						"moonstonelib"
-					],
-					"files": [
-						{
-							"url": "@PLUGINDIR@/templates/tv/template/moonstone-2.6/ActivityPanelsWithVideo/src",
-							"at": "src"
-						}
-					],
-					"class": "moonstone"
+					"id": "sdl_media",
+					"type": "native",
+					"version": "0.0.1",
+					"isDefault": false,
+					"description": "SDL Media App",
+					"class":"native_app",
+					"deps": ["nativeappinfo", "nativeicon"],
+					"files": [{
+						"url": "@PLUGINDIR@/templates/native/MediaApp"
+					}]
 				},
 				{
-					"id": "moonstone_avpv-2.6",
-					"profile": [
-						"tv"
-					],
-					"type": "template",
-					"description": "Enyo 2.6 moonstone AlwaysViewingPanels With Video",
-					"deps": [
-						"moonstonelib"
-					],
-					"files": [
-						{
-							"url": "@PLUGINDIR@/templates/tv/template/moonstone-2.6/AlwaysViewingPanelsWithVideo/src",
-							"at": "src"
-						}
-					],
-					"class": "moonstone"
+					"id": "sdl_opengles1",
+					"type": "native",
+					"version": "0.0.1",
+					"isDefault": false,
+					"description": "SDL with OpenGLES v1.1",
+					"class":"native_app",
+					"deps": ["nativeappinfo", "nativeicon"],
+					"files": [{
+						"url": "@PLUGINDIR@/templates/native/OpenGLESv1.1Project"
+					}]
 				},
 				{
-					"id": "moonstone_avp-2.6",
-					"profile": [
-						"tv"
-					],
-					"type": "template",
-					"description": "Enyo 2.6 moonstone AlwaysViewingPanels",
-					"deps": [
-						"moonstonelib"
-					],
-					"files": [
-						{
-							"url": "@PLUGINDIR@/templates/tv/template/moonstone-2.6/AlwaysViewingPanels/src",
-							"at": "src"
-						}
-					],
-					"class": "moonstone"
+					"id": "sdl_opengles2",
+					"type": "native",
+					"version": "0.0.1",
+					"isDefault": false,
+					"description": "SDL with OpenGLES v2.0",
+					"class":"native_app",
+					"deps": ["nativeappinfo", "nativeicon"],
+					"files": [{
+						"url": "@PLUGINDIR@/templates/native/OpenGLESv2.0Project"
+					}]
 				},
 				{
-					"id": "moonstone_ap-2.6",
-					"profile": [
-						"tv"
-					],
-					"type": "template",
-					"description": "Enyo 2.6 moonstone ActivityPanels",
-					"deps": [
-						"moonstonelib"
-					],
-					"files": [
-						{
-							"url": "@PLUGINDIR@/templates/tv/template/moonstone-2.6/ActivityPanels/src",
-							"at": "src"
-						}
-					],
-					"class": "moonstone"
-				},
-				{
-					"id": "moonstone_mb-2.6",
-					"profile": [
-						"tv"
-					],
-					"type": "template",
-					"description": "Enyo 2.6 moonstone MediaBrowser",
-					"deps": [
-						"moonstonelib"
-					],
-					"files": [
-						{
-							"url": "@PLUGINDIR@/templates/tv/template/moonstone-2.6/MediaBrowser/src",
-							"at": "src"
-						}
-					],
-					"class": "moonstone"
-				},
-				{
-					"id": "js_service",
-					"profile": [
-						"tv",
-						"watch"
-					],
+					"id": "webos-service",
 					"type": "webosService",
-					"description": "webOS node.js service template",
+					"version": "0.1",
+					"description": "webOS Node.js Service Template",
 					"files": [
 						{
 							"url": "@PLUGINDIR@/templates/webos-service",
@@ -184,26 +91,64 @@
 					]
 				},
 				{
-					"id": "webappinfo",
-					"profile": [
-						"tv",
-						"signage"
-					],
-					"type": "appinfo",
-					"description": "appinfo.json for web app",
+					"id": "native-service",
+					"type": "nativeService",
+					"version": "0.1",
+					"description": "webOS Native Service Template",
 					"files": [
 						{
-							"url": "@PLUGINDIR@/templates/webappinfo"
+							"url": "@PLUGINDIR@/templates/native-service",
+							"at": ""
 						}
 					]
 				},
 				{
-					"id": "webicon",
-					"profile": [
-						"tv"
+					"id": "webappinfo",
+					"type": "appinfo",
+					"version": "0.0.1",
+					"description": "minimal appinfo.json for webOS Application",
+					"files": [
+						{
+							"url": "@PLUGINDIR@/templates/webappinfo"
+						}
 					],
+					"filesubstitution": [
+						"appinfo.json"
+					]
+				},
+				{
+					"id": "enyoappinfo",
+					"type": "appinfo",
+					"version": "0.0.1",
+					"description": "appinfo.json to use built-in enyo framework on WebOS Device",
+					"files": [
+						{
+							"url": "@PLUGINDIR@/templates/enyoappinfo"
+						}
+					],
+					"filesubstitution": [
+						"appinfo.json"
+					]
+				},
+				{
+					"id": "nativeappinfo",
+					"type": "appinfo",
+					"version": "0.0.1",
+					"description": "appinfo.json for native application",
+					"files": [
+						{
+							"url": "@PLUGINDIR@/templates/nativeappinfo"
+						}
+					],
+					"filesubstitution": [
+						"appinfo.json"
+					]
+				},
+				{
+					"id": "webicon",
 					"type": "icon",
-					"description": "web app icon files [80x80, 130x130]",
+					"version": "0.0.1",
+					"description": "normal icon files [icon.png (80x80), largeIcon.png (130x130)]",
 					"files": [
 						{
 							"url": "@PLUGINDIR@/templates/webicon"
@@ -212,11 +157,9 @@
 				},
 				{
 					"id": "enyoicon",
-					"profile": [
-						"tv"
-					],
 					"type": "icon",
-					"description": "enyo app icon files [80x80, 130x130]",
+					"version": "0.0.1",
+					"description": "enyo icon files [icon.png (80x80), largeIcon.png (130x130)]",
 					"files": [
 						{
 							"url": "@PLUGINDIR@/templates/enyoicon"
@@ -224,90 +167,35 @@
 					]
 				},
 				{
-					"id": "app-moonstone-2.5",
-					"profile": [
-						"tv"
-					],
-					"type": "sources",
-					"description": "bootplate-moonstone default sources",
+					"id": "nativeicon",
+					"type": "icon",
+					"version": "0.0.1",
+					"description": "native app icon files [icon.png (80x80), largeIcon.png (130x130)]",
 					"files": [
 						{
-							"url": "@PLUGINDIR@/templates/app-moonstone-2.5"
+							"url": "@PLUGINDIR@/templates/nativeicon"
 						}
 					]
 				},
 				{
-					"id": "app-moonstone",
-					"profile": [
-						"tv"
-					],
-					"type": "sources",
-					"description": "bootplate-moonstone default sources",
-					"files": [
-						{
-							"url": "@PLUGINDIR@/templates/app-moonstone-2.6"
-						}
-					]
-				},
-				{
-					"id": "moonstonelib-2.3",
-					"profile": [
-						"tv"
-					],
+					"id": "moonstone-2.5",
 					"type": "library",
-					"version": "2.6",
+					"version": "2.5",
 					"onDevice": true,
 					"description": "bootplate-moonstone",
-					"deps": [
-						"app-moonstone-2.5",
-						"webappinfo",
-						"enyoicon"
-					],
-					"files": [
-						{
-							"url": "@PLUGINDIR@/templates/libraries/moonstone-2.3.zip"
-						}
-					]
+					"files": [{
+						"url": "@PLUGINDIR@/templates/libraries/moonstone-2.5.zip"
+					}]
 				},
 				{
-					"id": "moonstonelib-2.5",
-					"profile": [
-						"tv"
-					],
+					"id": "moonstone-2.3",
 					"type": "library",
-					"version": "2.6",
+					"version": "2.3",
 					"onDevice": true,
 					"description": "bootplate-moonstone",
-					"deps": [
-						"app-moonstone-2.5",
-						"webappinfo",
-						"enyoicon"
-					],
-					"files": [
-						{
-							"url": "@PLUGINDIR@/templates/libraries/moonstone-2.5.zip"
-						}
-					]
-				},
-				{
-					"id": "moonstonelib",
-					"profile": [
-						"tv"
-					],
-					"type": "library",
-					"version": "2.6",
-					"onDevice": true,
-					"description": "bootplate-moonstone",
-					"deps": [
-						"app-moonstone",
-						"webappinfo",
-						"enyoicon"
-					],
-					"files": [
-						{
-							"url": "@PLUGINDIR@/templates/libraries/moonstone-2.6.zip"
-						}
-					]
+					"files": [{
+						"url": "@PLUGINDIR@/templates/libraries/moonstone-2.3.zip"
+					}]
 				}
 			]
 		}

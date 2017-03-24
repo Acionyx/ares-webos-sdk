@@ -11,7 +11,8 @@
             "native": "executable"
         }
     },
-    "logFilePath" : "/media/developer/log/devlog", 
+    "templateFileName": "tv-templates.json",
+    "logFilePath" : "/media/developer/log/devlog",
     "install" : {
         "tempDirForIpk" : "/media/developer/temp",
         "changeTempDir" : true,
