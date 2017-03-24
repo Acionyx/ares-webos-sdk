@@ -1,10 +1,10 @@
 {
   "name": "ares-webos-sdk",
   "main": "./lib/common-tools.js",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/stevenvong/ares-webos-sdk"
+    "type": "git",
+    "url": "https://github.com/stevenvong/ares-webos-sdk"
   },
   "bin": {
     "ares-novacom": "./bin/ares-novacom.js",
@@ -17,46 +17,46 @@
     "ares-setup-device": "./bin/ares-setup-device.js"
   },
   "dependencies": {
-    "async": "~0.2.9",
-    "bluebird": "^3.4.6",
-    "body-parser": "1.4.x",
-    "chardet": "0.0.8",
-    "colors": "~1.0.3",
-    "combined-stream": "~0.0.4",
-    "easy-table": "~0.3.0",
-    "elfy": ">=0.1.0",
-    "encoding": "^0.1.11",
+    "async": "2.1.5",
+    "bluebird": "3.4.6",
+    "body-parser": "1.17.1",
+    "chardet": "0.1.0",
+    "colors": "1.1.2",
+    "combined-stream": "1.0.5",
+    "easy-table": "1.0.0",
+    "elfy": "0.1.0",
+    "encoding": "0.1.11",
     "enyo-dev": "1.0.0",
-    "express": "~3.3.4",
-    "extract-zip": "~1.0.3",
-    "fs-extra": "^1.0.0",
-    "fstream": "0.1.x",
-    "gift": ">=0.10.0",
-    "graceful-fs": "1.2.x",
-    "inherits": "~1.x",
-    "inquirer": ">=1.2.2",
-    "jsonschema": "~0.4.x",
-    "mkdirp": "~0.3.5",
-    "nopt": "~2.1.2",
-    "npmlog": "~0.0.4",
-    "readline": "0.0.x",
-    "request": "2.12.x",
-    "rimraf": "~2.1.2",
-    "semver": "2.1.0",
-    "shell-source": "~1.1.0",
-    "shelljs": ">=0.5.1",
-    "sprintf-js": "~0.0.7",
-    "ssdp-js": "^1.0.1",
-    "ssh2": ">=0.4.8",
-    "stream-buffers": "0.2.x",
-    "strip-bom": "^1.0.0",
-    "tar": "^2.2.1",
-    "temp": "~0.5.1",
-    "uglify-js": "^2.7.5"
+    "express": "4.15.2",
+    "extract-zip": "1.6.0",
+    "fs-extra": "2.1.2",
+    "fstream": "1.0.11",
+    "gift": "0.10.0",
+    "graceful-fs": "4.1.11",
+    "inherits": "2.0.3",
+    "inquirer": "1.2.2",
+    "jsonschema": "1.1.1",
+    "mkdirp": "0.5.1",
+    "nopt": "4.0.1",
+    "npmlog": "4.0.2",
+    "readline": "1.3.0",
+    "request": "2.81.0",
+    "rimraf": "2.6.1",
+    "semver": "5.3.0",
+    "shell-source": "1.1.0",
+    "shelljs": "0.5.1",
+    "sprintf-js": "1.0.3",
+    "ssdp-js": "1.0.1",
+    "ssh2": "0.4.8",
+    "stream-buffers": "3.0.1",
+    "strip-bom": "3.0.0",
+    "tar": "2.2.1",
+    "temp": "0.8.3",
+    "uglify-js": "2.7.5"
   },
   "engines": {
-    "node": ">=4.0.0",
-    "npm": ">=2.0.0"
+    "node": ">=7.0.0",
+    "npm": ">=4.0.0"
   },
   "engineStrict": true,
   "os": [
@@ -65,8 +65,8 @@
     "win32"
   ],
   "devDependencies": {
-    "mocha": "1.8.x",
-    "should": "1.2.x"
+    "mocha": "3.2.0",
+    "should": "11.2.1"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha test/*.spec.js"
