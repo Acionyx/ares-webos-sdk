@@ -1,0 +1,58 @@
+{
+	"templates": [
+		{
+			"id": "basic",
+			"isDefault": false,
+			"description": "basic web app for webOS TV",
+			"type": "webapp",
+			"profile": [
+				"tv"
+			]
+		},
+		{
+			"id": "moonstone-2014",
+			"isDefault": false,
+			"description": "moonstone app for webOS TV 1.0 (2014)",
+			"type": "moonstone",
+			"profile": [
+				"tv"
+			]
+		},
+		{
+			"id": "moonstone-2015",
+			"isDefault": false,
+			"description": "moonstone app for webOS TV 2.0 (2015)",
+			"type": "moonstone",
+			"profile": [
+				"tv"
+			]
+		},
+		{
+			"id": "moonstone-2016",
+			"isDefault": false,
+			"description": "moonstone app for webOS TV 3.0 (2016)",
+			"type": "moonstone",
+			"profile": [
+				"tv"
+			]
+		},
+		{
+			"id": "moonstone-2017",
+			"isDefault": true,
+			"description": "moonstone app for webOS TV 3.5 (2017)",
+			"type": "moonstone",
+			"profile": [
+				"tv"
+			]
+		},
+		{
+			"id": "js_service",
+			"isDefault": false,
+			"description": "js service for webOS TV",
+			"type": "jsservice",
+			"profile": [
+				"tv"
+			]
+		}
+	]
+}
